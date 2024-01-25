@@ -5,49 +5,33 @@
 
 html, body {
     height: 100%;
+
 }
 
 body {
-    background-color: purple;
+    background-color: pink;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+
 }
 
-/* style the .container for tic-tac-toe */
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
-    width: 300px;
-    height: 300px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+    background-color: transparent;
+    border: black 3px solid;
+    margin: 1rem;
 }
-
-/* style the .container cells called #cell */
 
 .cell {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    cursor: pointer;
-    background-color: #ff0066;
-    color: #ffff00;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-/* style the .container cells called #cell when hovered over */
-
-.container div:hover {
-    background-color: #e0e0e0;
+    background-color: powderblue;
+    display: grid;
+    place-items: center;
+    width: 31.55%;
+    height: 31.5%;
+    border: black 3px solid;
 }
